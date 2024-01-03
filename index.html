@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+
+    <div class="medicine-container">
+        <div class="medicine-title">
+            <b>Medicine Reminder</b>
+        </div>
+        <div class="medicine-dashboard">
+            <div class="toggle">
+                <label for="userName">Enter the user name</label>
+                <input type="text" id="userName">
+
+                <div class="tab1">Medical History</div>
+                <div class="tab2">All History</div>
+            </div>
+
+            <div class="hide" id="medicalHistory">
+                <ul class="list" id="medicalHistoryList"></ul>
+                <div class="input">
+                    <input type="text" id="history-input" name="history" placeholder="History">
+                    <button class="add-history" onclick="addMedicalHistory()">Add History</button>
+                </div>
+            </div>
+
+            <div class="hide" id="all">
+                <ul class="list" id="allHistoryList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="medicine.js"></script>
+
+</body>
+</html>
